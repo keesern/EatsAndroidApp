@@ -220,12 +220,12 @@ public class AddMenuActivity extends AppCompatActivity {
                 @Override
                 public void done(String s, BmobException e) {
                     if (e == null) {
-                        Toast.makeText(AddMenuActivity.this, "CREAT SUCCESS", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddMenuActivity.this, "Create Successful", Toast.LENGTH_SHORT).show();
                         finish();
 
                     } else {
 
-                        Toast.makeText(AddMenuActivity.this, "CREAT ERROR", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AddMenuActivity.this, "Error", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
@@ -241,7 +241,7 @@ public class AddMenuActivity extends AppCompatActivity {
         if (requestCode == RESULT_LOAD_IMAGE) {
             Uri uri = data.getData();
             uirl = getRealPathFromUri(this, uri);
-            dialog = creatDialog(this, "uploading picture...");
+            dialog = creatDialog(this, "Uploading picture...");
             dialog.show();
             updata(uirl);
             //to do fiheadnd the path of pi  
@@ -285,7 +285,7 @@ public class AddMenuActivity extends AppCompatActivity {
             @Override
             public void done(BmobException e) {
                 if (e == null) {
-                    Toast.makeText(getApplicationContext(), "success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
                     headpicurl = bmobFile.getFileUrl();
                     dialog.dismiss();
                 } else {

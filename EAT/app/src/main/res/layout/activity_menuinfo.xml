@@ -21,7 +21,7 @@
         android:textSize="20sp"
         android:id="@+id/menuname_info"
         android:layout_width="wrap_content"
-        android:text="menu name"
+        android:text="Menu"
         android:layout_height="wrap_content" />
     <ImageView
         android:layout_marginTop="10dp"

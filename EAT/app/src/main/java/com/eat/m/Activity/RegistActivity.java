@@ -61,10 +61,10 @@ public class RegistActivity extends AppCompatActivity {
         String passnumber=passWord.getText().toString().trim();
         String againpassnumber=againpassWord.getText().toString().trim();
         if(!passnumber.equals(againpassnumber)){System.out.println("-------------------1");
-            Toast.makeText(getApplicationContext(),"the password is not correct",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Password Incorrect",Toast.LENGTH_SHORT).show();
         }
         else if(user.equals("")||passnumber.equals("")||againpassnumber.equals("")){
-            Toast.makeText(getApplicationContext(),"You should input the name or password",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(),"Invalid Name or Password",Toast.LENGTH_SHORT).show();
         }
         else{System.out.println("-------------------3");
             User bu = new User();
@@ -80,7 +80,7 @@ public class RegistActivity extends AppCompatActivity {
                         Intent intent=new Intent(getApplicationContext(),MainPageActivity.class);
                         startActivity(intent);finish();
                     }else{
-                        Toast.makeText(getApplicationContext(),"regist error",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Registration Error",Toast.LENGTH_SHORT).show();
                     }
                 }
             });

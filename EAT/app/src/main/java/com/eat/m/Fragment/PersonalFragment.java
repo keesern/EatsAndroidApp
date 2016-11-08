@@ -90,10 +90,10 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
             @Override
             public void done(BmobException e) {
                 if (e == null) {
-                    Toast.makeText(getActivity(), "success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Success", Toast.LENGTH_SHORT).show();
                    // finish();
                 } else {
-                    Toast.makeText(getActivity(), "error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -111,7 +111,7 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
 
             //to do fiheadnd the path of pi  
             head.setImageURI(uri);
-            dialog=creatDialog(getActivity(),"uploading picture...");
+            dialog=creatDialog(getActivity(),"Uploading picture...");
             dialog.show();
             updata(uirl);
         }

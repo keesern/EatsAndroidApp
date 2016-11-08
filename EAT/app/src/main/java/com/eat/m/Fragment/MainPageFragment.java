@@ -77,7 +77,7 @@ public class MainPageFragment extends Fragment implements View.OnClickListener {
             @Override
             public void done(List<Menu> list, BmobException e) {
                 if(e==null){
-                    Toast.makeText(getActivity(), "loding success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Loaded", Toast.LENGTH_SHORT).show();
                     //Toast.makeText(getActivity(), "查询成功"+list.size(), Toast.LENGTH_SHORT).show();
                     Items.clear();
 
@@ -88,7 +88,7 @@ public class MainPageFragment extends Fragment implements View.OnClickListener {
                     pullToRefreshListView.onRefreshComplete();
                 }
                 else {
-                    Toast.makeText(getActivity(), "loding error", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Loading Error", Toast.LENGTH_SHORT).show();
                     pullToRefreshListView.onRefreshComplete();
                 }
 
