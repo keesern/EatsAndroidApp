@@ -9,6 +9,16 @@
     tools:context=".MainActivity">
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/newgrey"/>
+
+    <ImageView
+        android:layout_width="251dp"
+        android:layout_height="251dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/icon"/>
 
     <EditText
         android:id="@+id/login_username"
@@ -19,13 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="15dp"
-        android:hint="user name"
+        android:hint="User Name"
         android:textSize="15sp"
         />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@color/newgrey"/>
+
     <EditText
         android:id="@+id/login_password"
         android:paddingTop="10dp"
@@ -35,7 +42,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="15dp"
         android:password="true"
-        android:hint="password"
+        android:hint="Password"
         android:textSize="15sp"
         />
 

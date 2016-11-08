@@ -9,6 +9,11 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="251dp"
+        android:layout_height="251dp"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/icon"/>
 
     <EditText
         android:id="@+id/rg_username"

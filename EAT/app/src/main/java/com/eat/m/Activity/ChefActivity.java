@@ -106,8 +106,9 @@ public class ChefActivity extends AppCompatActivity {
        query.findObjects(new FindListener<User>() {
            @Override
            public void done(List<User> list, BmobException e) {
+
                if (e == null) {
-                   Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                   //Toast.makeText(getApplicationContext(), "Success CHEFACTIVITY", Toast.LENGTH_SHORT).show();
                    listitem = list;
                     System.out.println("----------+"+listitem.size());
                    freshview();
